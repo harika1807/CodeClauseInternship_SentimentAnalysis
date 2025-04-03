@@ -1,22 +1,26 @@
 from textblob import TextBlob
 
 def analyze_sentiment(text):
-    """Analyze sentiment of the given text."""
     blob = TextBlob(text)
-    polarity = blob.sentiment.polarity  # Sentiment score ranges from -1 to 1
+    polarity = blob.sentiment.polarity
     
     if polarity > 0:
-        return "Positive"
+        sentiment = "Positive"
     elif polarity < 0:
-        return "Negative"
+        sentiment = "Negative"
     else:
-        return "Neutral"
+        sentiment = "Neutral"
+    
+    return sentiment, polarity
 
-# Taking user input
-text = input("Enter a sentence or review: ")
-
-# Analyzing sentiment
-sentiment = analyze_sentiment(text)
-
-# Displaying result
-print(f"Sentiment: {sentiment}")
+while True:
+    text = input("\nEnter a sentence (or type 'exit' to stop): ").strip()
+    if text.lower() == 'exit':
+        print("Exiting Sentiment Analysis...")
+        break
+    if not text:
+        print("Please enter a valid sentence!")
+        continue
+    
+    sentiment, polarity = analyze_sentiment(text)
+    print(f"Sentiment: {sentiment} (Polarity Score: {polarity:.2f})")
