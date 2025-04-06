@@ -1,5 +1,8 @@
-# Sentiment Analysis 🧠💬
+<p align="center">
+  <img src="sentimentAnalysis.png" alt="Sentiment Analysis Banner" />
+</p>
 
+# Sentiment Analysis 🧠💬
 A simple and effective sentiment analysis tool built using Python and TextBlob.  
 This project analyzes text data and classifies it into Positive, Negative, or Neutral sentiment categories.
 
