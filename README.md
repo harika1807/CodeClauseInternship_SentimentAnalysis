@@ -35,13 +35,13 @@ Try the Colab version 👉 [![Open In Colab](https://colab.research.google.com/a
 
 
 
-🧪 How to Use
+🧪 **How to Use**
 
 You can either:
 Run SentimentAnalysis.ipynb in Google Colab, or
 Use it locally by running the code in any Jupyter Notebook.
 
-📜 License
+📜 **License**
 This project is licensed under the MIT License. 
 See the LICENSE file for details.
 
